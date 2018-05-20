@@ -218,6 +218,11 @@ namespace NwsApi
 
         // TODO: Wrapper for /offices/{officeId}
 
+
+        // TODO: Wrapper for /zones/{type}/{zoneId}
+
+        // TODO: Wrapper for /zones/{type}/{zoneId}/forecast
+
         #endregion
 
     }
