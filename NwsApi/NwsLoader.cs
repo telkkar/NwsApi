@@ -48,7 +48,7 @@ namespace NwsApi
         /// <exception cref="NotImplementedException"></exception>
         public NwsPoint PointData(double latitude, double longitude)
         {
-            throw NotImplementedException(nameof(PointData) + " not implemented");
+            throw new NotImplementedException(nameof(PointData) + " not implemented");
         }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace NwsApi
         /// <exception cref="NotImplementedException"></exception>
         public NwsGridpoint GridpointData(string weatherForecastOfficeId, int x, int y)
         {
-            throw NotImplementedException(nameof(GridpointData) + " not implemented");
+            throw new NotImplementedException(nameof(GridpointData) + " not implemented");
         }
 
         #endregion
