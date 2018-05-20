@@ -223,6 +223,21 @@ namespace NwsApi
 
         // TODO: Wrapper for /zones/{type}/{zoneId}/forecast
 
+
+        // TODO: Wrapper for /alerts?{parameters}
+
+        // TODO: Wrapper for /alerts/active
+
+        // TODO: Wrapper for /alerts/{alertId}
+
+        // TODO: Wrapper for /alerts/active/count
+
+        // TODO: Wrapper for /alerts/active/zone/{zoneId}
+
+        // TODO: Wrapper for /alerts/active/area/{area}
+
+        // TODO: Wrapper for /alerts/active/region/{region}
+
         #endregion
 
     }
