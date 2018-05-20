@@ -216,7 +216,18 @@ namespace NwsApi
         // TODO: Wrapper for /products/locations/{locationId}/types
 
 
-        // TODO: Wrapper for /offices/{officeId}
+        /// <summary>
+        /// Wrapper for /offices/{officeId}
+        ///
+        /// https://forecast-v3.weather.gov/documentation
+        /// </summary>
+        /// <param name="officeId">Office identifier to get data for</param>
+        /// <returns>Information about the office specified</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public NwsOffice OfficeData(string officeId)
+        {
+            throw new NotImplementedException(nameof(OfficeData) + " not implemented");
+        }
 
 
         // TODO: Wrapper for /zones/{type}/{zoneId}
