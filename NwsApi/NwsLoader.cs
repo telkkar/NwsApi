@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Net.Http;
 
 namespace NwsApi
@@ -146,6 +147,58 @@ namespace NwsApi
         {
             throw new NotImplementedException(nameof(GridpointData) + " not implemented");
         }
+
+        /// <summary>
+        /// Wrapper for /stations
+        ///
+        /// https://forecast-v3.weather.gov/documentation
+        /// </summary>
+        /// <param name="stationIds">String of comma-separated station ids</param>
+        /// <param name="stateCodes">String of comma-separated state codes</param>
+        /// <param name="limit">Max number of stations to load</param>
+        /// <returns>Information about the stations found</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public NwsStations Stations(string stationIds, string stateCodes, int limit = 10)
+        {
+            throw new NotImplementedException(nameof(Stations) + " not implemented");
+        }
+
+        /// <summary>
+        /// Wrapper for /stations
+        ///
+        /// https://forecast-v3.weather.gov/documentation
+        /// </summary>
+        /// <param name="stationIds">Enumerable container of station ids</param>
+        /// <param name="stateCodes">Enumerable container of state codes</param>
+        /// <param name="limit">Max number of stations to load</param>
+        /// <returns>Information about the stations found</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public NwsStations Stations(IEnumerable stationIds, IEnumerable stateCodes, int limit = 10)
+        {
+            throw new NotImplementedException(nameof(Stations) + " not implemented");
+        }
+        /// <summary>
+        /// Wrapper for /stations/{stationId}/
+        ///
+        /// https://forecast-v3.weather.gov/documentation
+        /// </summary>
+        /// <param name="stationId">Station id to load data for</param>
+        /// <returns>Information about the station</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public NwsStations StationData(string stationId)
+        {
+            throw new NotImplementedException(nameof(StationData) + " not implemented");
+        }
+
+        /*
+         * The following are documentation stubs for now. There's not an immediate foreseeable use for these,
+         * so they're going to remain documentation TODOs for now and will be reviewed later.
+         */
+        // TODO: Wrapper for /stations/{stationId}/observations
+
+        // TODO: Wrapper for /stations/{stationId}/observations/current
+
+        // TODO: Wrapper for /stations/{stationId}/observations/{recordId}
 
         #endregion
 
