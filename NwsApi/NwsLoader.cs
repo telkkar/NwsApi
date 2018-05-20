@@ -114,9 +114,9 @@ namespace NwsApi
         /// <param name="longitude">EPSG:4326 longitude</param>
         /// <returns>NwsPointStations containing nearby station information for the specified point</returns>
         /// <exception cref="NotImplementedException"></exception>
-        public NwsPointStations NwsPointStations(double latitude, double longitude)
+        public NwsPointStations PointStations(double latitude, double longitude)
         {
-            throw new NotImplementedException(nameof(NwsPointStations) + " not implemented");
+            throw new NotImplementedException(nameof(PointStations) + " not implemented");
         }
 
         /// <summary>
@@ -127,9 +127,9 @@ namespace NwsApi
         /// <param name="nwsPoint">Point specifying the location</param>
         /// <returns>NwsPointStations containing nearby station information for the specified point</returns>
         /// <exception cref="NotImplementedException"></exception>
-        public NwsPointStations NwsPointStations(NwsPoint nwsPoint)
+        public NwsPointStations PointStations(NwsPoint nwsPoint)
         {
-            throw new NotImplementedException(nameof(NwsPointStations) + " not implemented");
+            throw new NotImplementedException(nameof(PointStations) + " not implemented");
         }
 
         /// <summary>
