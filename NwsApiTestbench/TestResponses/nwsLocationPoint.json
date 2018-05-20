@@ -1,0 +1,70 @@
+{
+    "@context": {
+        "wx": "https://api.weather.gov/ontology#",
+        "s": "https://schema.org/",
+        "geo": "http://www.opengis.net/ont/geosparql#",
+        "unit": "http://codes.wmo.int/common/unit/",
+        "@vocab": "https://api.weather.gov/ontology#",
+        "geometry": {
+            "@id": "s:GeoCoordinates",
+            "@type": "geo:wktLiteral"
+        },
+        "city": "s:addressLocality",
+        "state": "s:addressRegion",
+        "distance": {
+            "@id": "s:Distance",
+            "@type": "s:QuantitativeValue"
+        },
+        "bearing": {
+            "@type": "s:QuantitativeValue"
+        },
+        "value": {
+            "@id": "s:value"
+        },
+        "unitCode": {
+            "@id": "s:unitCode",
+            "@type": "@id"
+        },
+        "forecastOffice": {
+            "@type": "@id"
+        },
+        "forecastGridData": {
+            "@type": "@id"
+        },
+        "publicZone": {
+            "@type": "@id"
+        },
+        "county": {
+            "@type": "@id"
+        }
+    },
+    "@id": "https://api.weather.gov/points/43.07,-89.4",
+    "@type": "wx:Point",
+    "geometry": "POINT (-89.4 43.07)",
+    "cwa": "MKX",
+    "forecastOffice": "https://api.weather.gov/offices/MKX",
+    "gridX": 37,
+    "gridY": 31,
+    "forecast": "https://api.weather.gov/gridpoints/MKX/37,31/forecast",
+    "forecastHourly": "https://api.weather.gov/gridpoints/MKX/37,31/forecast/hourly",
+    "forecastGridData": "https://api.weather.gov/gridpoints/MKX/37,31",
+    "observationStations": "https://api.weather.gov/gridpoints/MKX/37,31/stations",
+    "relativeLocation": {
+        "city": "Madison",
+        "state": "WI",
+        "geometry": "POINT (-89.429856 43.087815)",
+        "distance": {
+            "value": 3131.1430533458,
+            "unitCode": "unit:m"
+        },
+        "bearing": {
+            "value": 129,
+            "unitCode": "unit:degrees_true"
+        }
+    },
+    "forecastZone": "https://api.weather.gov/zones/forecast/WIZ063",
+    "county": "https://api.weather.gov/zones/county/WIC025",
+    "fireWeatherZone": "https://api.weather.gov/zones/fire/WIZ063",
+    "timeZone": "America/Chicago",
+    "radarStation": "KMKX"
+}
