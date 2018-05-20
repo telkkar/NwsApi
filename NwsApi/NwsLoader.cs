@@ -44,11 +44,92 @@ namespace NwsApi
         /// </summary>
         /// <param name="latitude">EPSG:4326 latitude</param>
         /// <param name="longitude">EPSG:4326 longitude</param>
-        /// <returns>NwsPoint containig information about the specified point</returns>
+        /// <returns>NwsPoint containing information about the specified point</returns>
         /// <exception cref="NotImplementedException"></exception>
         public NwsPoint PointData(double latitude, double longitude)
         {
             throw new NotImplementedException(nameof(PointData) + " not implemented");
+        }
+
+        /// <summary>
+        /// Wrapper for /points/{latitude,longitude}/forecast
+        ///
+        /// https://forecast-v3.weather.gov/documentation
+        /// </summary>
+        /// <param name="latitude">EPSG:4326 latitude</param>
+        /// <param name="longitude">EPSG:4326 longitude</param>
+        /// <returns>NwsPointForecast containing forecast information for the specified point</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public NwsPointForecast PointForecast(double latitude, double longitude)
+        {
+            throw new NotImplementedException(nameof(PointForecast) + " not implemented");
+        }
+
+        /// <summary>
+        /// Wrapper for /points/{latitude,longitude}/forecast
+        ///
+        /// https://forecast-v3.weather.gov/documentation
+        /// </summary>
+        /// <param name="nwsPoint">Point specifying the location</param>
+        /// <returns>NwsPointForecast containing forecast information for the specified point</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public NwsPointForecast PointForecast(NwsPoint nwsPoint)
+        {
+            throw new NotImplementedException(nameof(PointForecast) + " not implemented");
+        }
+
+        /// <summary>
+        /// Wrapper for /points/{latitude,longitude}/forecast
+        ///
+        /// https://forecast-v3.weather.gov/documentation
+        /// </summary>
+        /// <param name="latitude">EPSG:4326 latitude</param>
+        /// <param name="longitude">EPSG:4326 longitude</param>
+        /// <returns>NwsPointForcastHourly containing hourly forecast information for the specified point</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public NwsPointForecastHourly PointForecastHourly(double latitude, double longitude)
+        {
+            throw new NotImplementedException(nameof(PointForecastHourly) + " not implemented");
+        }
+
+        /// <summary>
+        /// Wrapper for /points/{latitude,longitude}/forecast
+        ///
+        /// https://forecast-v3.weather.gov/documentation
+        /// </summary>
+        /// <param name="nwsPoint">Point specifying the location</param>
+        /// <returns>NwsPointForcastHourly containing hourly forecast information for the specified point</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public NwsPointForecastHourly PointForecastHourly(NwsPoint nwsPoint)
+        {
+            throw new NotImplementedException(nameof(PointForecastHourly) + " not implemented");
+        }
+
+        /// <summary>
+        /// Wrapper for /points/{latitude,longitude}/stations
+        ///
+        /// https://forecast-v3.weather.gov/documentation
+        /// </summary>
+        /// <param name="latitude">EPSG:4326 latitude</param>
+        /// <param name="longitude">EPSG:4326 longitude</param>
+        /// <returns>NwsPointStations containing nearby station information for the specified point</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public NwsPointStations NwsPointStations(double latitude, double longitude)
+        {
+            throw new NotImplementedException(nameof(NwsPointStations) + " not implemented");
+        }
+
+        /// <summary>
+        /// Wrapper for /points/{latitude,longitude}/stations
+        ///
+        /// https://forecast-v3.weather.gov/documentation
+        /// </summary>
+        /// <param name="nwsPoint">Point specifying the location</param>
+        /// <returns>NwsPointStations containing nearby station information for the specified point</returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public NwsPointStations NwsPointStations(NwsPoint nwsPoint)
+        {
+            throw new NotImplementedException(nameof(NwsPointStations) + " not implemented");
         }
 
         /// <summary>
