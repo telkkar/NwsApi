@@ -215,6 +215,9 @@ namespace NwsApi
 
         // TODO: Wrapper for /products/locations/{locationId}/types
 
+
+        // TODO: Wrapper for /offices/{officeId}
+
         #endregion
 
     }
