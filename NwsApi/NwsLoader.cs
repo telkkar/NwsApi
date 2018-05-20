@@ -200,6 +200,21 @@ namespace NwsApi
 
         // TODO: Wrapper for /stations/{stationId}/observations/{recordId}
 
+
+        // TODO: Wrapper for /products/{productId}
+
+        // TODO: Wrapper for /products/types
+
+        // TODO: Wrapper for /products/types/{typeId}
+
+        // TODO: Wrapper for /products/types/{typeId}/locations
+
+        // TODO: Wrapper for /products/types/{typeId}/locations/{locationId}
+
+        // TODO: Wrapper for /products/locations
+
+        // TODO: Wrapper for /products/locations/{locationId}/types
+
         #endregion
 
     }
