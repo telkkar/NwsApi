@@ -4,6 +4,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="FakeItEasy" Version="4.6.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
@@ -11,5 +12,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NwsApi\NwsApi.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="TestResponses\nwsPoint.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
