@@ -1,4 +1,4 @@
-﻿namespace NwsApi
+﻿namespace NwsApi.Models
 {
     public class NwsStations
     {

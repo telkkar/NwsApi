@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NwsApi", "NwsApi\NwsApi.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NwsApiTestbench", "NwsApiTestbench\NwsApiTestbench.csproj", "{42963438-1B0E-4124-B016-AC8E62DF840A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NwsApi.Tests", "NwsApi.Tests\NwsApi.Tests.csproj", "{1A768B44-DCBC-48C5-B626-0F0D2BAFD920}"
+EndProject
 Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F200579E-0AA2-4C33-B666-E1E970BD5DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -16,6 +18,10 @@ Global
 		{42963438-1B0E-4124-B016-AC8E62DF840A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42963438-1B0E-4124-B016-AC8E62DF840A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42963438-1B0E-4124-B016-AC8E62DF840A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A768B44-DCBC-48C5-B626-0F0D2BAFD920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A768B44-DCBC-48C5-B626-0F0D2BAFD920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A768B44-DCBC-48C5-B626-0F0D2BAFD920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A768B44-DCBC-48C5-B626-0F0D2BAFD920}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

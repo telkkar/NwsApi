@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
-using System.Net.Http;
+using System.IO;
+using Newtonsoft.Json;
+using NwsApi.Models;
 
 namespace NwsApi
 {
@@ -13,26 +15,25 @@ namespace NwsApi
     {
         #region Constructors
 
-        public NwsLoader() : this(new HttpClient())
+        private NwsLoader()
         {
 
         }
 
         /// <summary>
-        /// Constructor to use if consumers have premade an HttpClient
+        /// Create a fancy new NwsLoader
         /// </summary>
-        /// <param name="httpClient"></param>
-        public NwsLoader(HttpClient httpClient)
+        /// <param name="nwsDataLoader">Implements INwsDataLoader</param>
+        public NwsLoader(INwsDataLoader nwsDataLoader)
         {
-            this.HttpClient = httpClient;
+            this.NwsDataLoader = nwsDataLoader;
         }
 
         #endregion
 
         #region Properties
 
-        // TODO: Remove direct reliance on HttpClient so we can write tests that parse pre-selected responses
-        private HttpClient HttpClient { get; set; }
+        private INwsDataLoader NwsDataLoader { get; set; }
 
         #endregion
 
@@ -46,10 +47,20 @@ namespace NwsApi
         /// <param name="latitude">EPSG:4326 latitude</param>
         /// <param name="longitude">EPSG:4326 longitude</param>
         /// <returns>NwsPoint containing information about the specified point</returns>
-        /// <exception cref="NotImplementedException"></exception>
         public NwsPoint PointData(double latitude, double longitude)
         {
-            throw new NotImplementedException(nameof(PointData) + " not implemented");
+            NwsPoint nwsPoint;
+
+            var stream = NwsDataLoader.GetResponseStream($"/points/{latitude},{longitude}");
+
+            using (var sr = new StreamReader(stream))
+            using (var jsonReader = new JsonTextReader(sr))
+            {
+                var jsonSerializer = new JsonSerializer();
+                nwsPoint = jsonSerializer.Deserialize<NwsPoint>(jsonReader);
+            }
+
+            return nwsPoint;
         }
 
         /// <summary>
